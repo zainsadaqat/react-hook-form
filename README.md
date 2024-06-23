@@ -48,7 +48,7 @@ required: {
 }) />
 ```
 
-> Note: In strick mode, components are rendered twice in dev mode to make sure there's no old value.
+> Note: In strick mode, components are rendered twice in dev mode to make sure there's no old value. 
 
 
 ```tsx
