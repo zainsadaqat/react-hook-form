@@ -40,8 +40,33 @@ it allows to register form control like `register('username')`
 ```
 OR
 ```js
-<input type="text" id="username" ...register("username") />
+<input type="text" id="username" ...register("username", {
+required: {
+  value: true,
+  message: "Username is required"
+}
+}) />
 ```
 
 > Note: In strick mode, components are rendered twice in dev mode to make sure there's no old value.
+
+
+```tsx
+const YouTubeForm = () => {
+const form = useForm();
+const {register, handleSubmit, formState} = form;
+const {errors} = formState;
+
+const onSubmit = (data) => {
+  console.log(data);
+}
+return (
+<form onSubmit={}>
+  <label htmlFor="username">Username</label> 
+  <input type="text" id="username" />
+  <p>{errors.username?.message}</p>
+</form>
+)
+}
+```
 
