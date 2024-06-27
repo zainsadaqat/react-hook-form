@@ -1,6 +1,6 @@
 # React Hook Form            
 
-- Handle Form Data        
+- Handle Form Data         
 - Form Validation  
 - Error Messages 
 - Data Submission
