@@ -7,7 +7,7 @@
 
 > Note: useForm() returns an object like `const form = useForm();`
 
-## Managing Form State Includes:
+## Managing Form State Includes: 
 
 - Current value of every field
 - A field has been interacted
